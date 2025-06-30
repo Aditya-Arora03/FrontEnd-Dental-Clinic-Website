@@ -1,0 +1,343 @@
+body{
+    background-color: rgb(222, 233, 235);
+    font-family: Arial;
+}
+
+.custom1{
+    background: linear-gradient(135deg, #e46515,rgb(124, 93, 93) );
+    height: 80px;
+}
+
+.div1{
+    width: 90%;
+    margin-left: 10%;
+    text-align: center;
+    font-family: Arial;
+    text-align: justify;
+}
+
+.div2{
+    margin-left: 10%;
+    text-align: left;
+    font-family: Arial;
+
+}
+
+.header{
+    background-color: goldenrod;
+    margin-top: -20px;
+    height: 110px;
+    border-bottom: 3px solid darkolivegreen;
+}
+
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+}
+
+.style{
+    background-color: rgb(244, 239, 239);
+    box-shadow: 0 0 10px rgb(113, 28, 28);
+    border: 3px ridge black;
+    
+}
+
+h2{
+    text-align: center;
+    padding-top: 40px;
+    font-family: Arial;
+}
+
+h3{
+    background-color: rgb(244, 239, 239);
+    color: red;
+    border-color: orange;
+    font-family: Arial;
+}
+
+.bookbtn1{
+    background-color: white;
+    color: red;
+    margin-top: 3%;
+    width: 200px;
+    height: 70px;
+    border-color: orange;
+    border-width: 3px;
+    
+    font-family: Arial;
+    border-radius: 10px;
+}
+
+.bookbtn2{
+    color: red;
+    width: 130px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-color: orange;
+    border-width: 3px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+
+.bookbtn3{
+    color: black;
+    border: 2px solid orangered;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.bookbtn3:focus-within{
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.bookbtn4{
+    border: 1px dashed orangered;
+    padding: 5px;
+}
+
+.confirmbutton{
+    border-color: orange;
+    color: darkgreen;
+    width: 170px;
+    height: 70px;
+    margin-left: 40%;
+    font-size: medium;
+    margin-bottom: 10px;
+    border-width: 3px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] 
+{
+    width: 190px;
+    height: 50px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid rgb(42, 34, 81);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus
+{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.address{
+    width: 190px;
+    height: 50px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.address:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select {
+    width: 220px;
+    height: 40px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+}
+
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.city{
+    font-size: medium;
+}
+
+.time-slot {
+    border: 2px solid #ff6600; /* Orange border */
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+}
+  
+.time-slot:hover {
+    background-color: #0091ff;
+    color: white;
+}
+  
+.time-slot input[type="radio"] {
+    display: none;
+}
+  
+.time-slot.selected {
+    background-color: darkgreen;
+    color: white;
+    border-color: blue;
+}
+  
+.doctor-card {
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #222;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+  
+.doctor-card input[type="radio"] {
+    margin-right: 10px;
+    display: none;
+    accent-color: #ff6600;
+}
+  
+.doctor-card span {
+    color: #555;
+    font-size: 15px;
+}
+  
+.doctor-card:hover {
+    background-color: #fff6f0;
+    border-color: #cc5200;
+}
+
+.doctor-card .icon::before {
+    content: "🦷";
+    font-size: 20px;
+    display: inline-block;
+    color: #aaa;
+}
+
+.doctor-card input[type="radio"]:checked ~ .icon::before {
+    content: "✅";
+    color: #ff6600;
+}
+
+.appointment-type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    color: #c40000;
+    cursor: pointer;
+  }
+  
+  .appointment-type input[type="radio"] {
+    display: none;
+  }
+  
+  .appointment-type span {
+    padding: 6px 12px;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .appointment-type:hover span {
+    background-color: #fff0f0;
+  }
+  
+  .appointment-type input[type="radio"]:checked + span {
+    background-color: rgb(37, 176, 37);
+    color: white;
+  }
+
+  .form-card {
+    background: #fff;
+    border: 5px solid orange;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.custom-input {
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.input-group .form-control {
+    padding-left: 1.2rem;
+}
+
+.radio-group label {
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 6px;
+    accent-color: orange;
+}
+
+.confirm-btn {
+    background: linear-gradient(to right, orange, darkorange);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.confirm-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(255, 165, 0, 0.4);
+}
+
+.tooltip-icon {
+    color: orange;
+    cursor: pointer;
+}
+
+
+.error-msg {
+    font-size: 0.75rem;
+    color: #dc3545; /* subtle red */
+    margin-top: 4px;
+    font-style: italic;
+}
+

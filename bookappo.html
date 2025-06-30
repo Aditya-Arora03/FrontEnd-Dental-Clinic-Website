@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Of Appointment</title>
+    <link rel="stylesheet" type="text/css" href="bookappo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="bookappo.js"></script>
+</head>
+<body style="background: #f8fafc; font-family: 'Roboto', Arial, sans-serif; color: #222;">
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background: linear-gradient(90deg, #0d6efd 60%, #0dcaf0 100%);">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="dental_company_logo.jpg" alt="Dr. YAM's Clinic Logo" class="me-2" width="48" height="48"
+                    style="border-radius:50%;border:2px solid #fff;">
+                Dr. YAM's Clinic
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mainNavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="dentalclinicpage.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="dentalclinicpage.html#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="bookappo.html" class="nav-link active">Book Appointment</a></li>
+                    <li class="nav-item"><a href="reqacall.html" class="nav-link">Ask for Callback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero wala main Section -->
+    <section class="hero-section container">
+        <div class="hero-content container" style="padding: 1.5rem 2rem; max-width: 600px;">
+            <h1
+                style="font-family: 'Montserrat', sans-serif; font-size: 2.8rem; font-weight: 700; background: linear-gradient(45deg, #FFD700 0%, #FFB300 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                Appointment Form</h1>
+        </div>
+    </section>
+
+    <!-- Appointment Form wala Section -->
+    <section class="container my-5" style="max-width: 900px;">
+        <form action="submission.html" target="_blank" id="appointmentForm" class="bg-white p-4 rounded-4 shadow"
+            style="font-family: Arial">
+
+            <h5 class="mb-3"><span class="text-primary">1.</span> <u>Basic Information</u></h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" required placeholder="First Name only"
+                        pattern="[A-Za-z]{2,25}">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" required placeholder="Last Name only"
+                        pattern="[A-Za-z]{2,25}">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" required placeholder="Enter 10 digits number"
+                        pattern="[7-9]{1}[0-9]{9}">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Address</label>
+                    <textarea class="form-control" required></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">City</label>
+                    <select class="form-select" required>
+                        <option value="">--Select city--</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="aurangabad">Aurangabad</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Reason for Visit <span class="text-muted">(optional)</span></label>
+                    <input type="text" class="form-control" placeholder="Optional">
+                </div>
+            </div>
+            <hr>
+
+            <h5 class="mb-3"><span class="text-primary">2.</span> <u>Appointment Scheduling</u></h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label class="form-label">Preferred Date</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Preferred Time Slots</label>
+                    <div class="d-flex flex-wrap gap-2">
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="09:30am - 10:30am" required> 09:30am - 10:30am
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="10:30am - 11:30am"> 10:30am - 11:30am
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="11:30am - 12:30pm"> 11:30am - 12:30pm
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="12:30pm - 01:30pm"> 12:30pm - 01:30pm
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="02:30pm - 03:30pm"> 02:30pm - 03:30pm
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="03:30pm - 04:30pm"> 03:30pm - 04:30pm
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="04:30pm - 05:30pm"> 04:30pm - 05:30pm
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm">
+                            <input type="radio" name="time" value="05:30pm - 06:30pm"> 05:30pm - 06:30pm
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">Dentist Preference</h6>
+                <div class="d-flex flex-wrap gap-3">
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="doctor" value="Dr. Yagya Muthreja" required> Dr. Yagya Muthreja <span
+                            class="text-muted">(Orthodontics Specialist)</span>
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="doctor" value="Dr. Rohit Sharma"> Dr. Rohit Sharma <span
+                            class="text-muted">(Dental Prosthetics Specialist)</span>
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="doctor" value="Dr. Chris Gayle"> Dr. Chris Gayle <span
+                            class="text-muted">(Overall Specialist)</span>
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="doctor" value="Dr. Aditya Arora"> Dr. Aditya Arora <span
+                            class="text-muted">(Chief Dental Surgeon & Dean)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">Type Of Appointment</h6>
+                <div class="d-flex flex-wrap gap-3">
+                    <label class="btn btn-outline-success">
+                        <input type="radio" name="appointment" value="New Patient" required> 🆕 New Patient
+                    </label>
+                    <label class="btn btn-outline-info">
+                        <input type="radio" name="appointment" value="Follow-up"> 🔁 Follow-up
+                    </label>
+                    <label class="btn btn-outline-danger">
+                        <input type="radio" name="appointment" value="Emergency"> 🚨 Emergency
+                    </label>
+                </div>
+            </div>
+            <hr>
+
+            <h5 class="mb-3"><span class="text-primary">3.</span> <u>Insurance & Payment Details</u> <small
+                    class="text-muted">(if any)</small></h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label class="form-label">Insurance Provider Company <i class="bi bi-shield-check"
+                            data-bs-toggle="tooltip" title="Select your insurance provider from the list."></i></label>
+                    <select class="form-select">
+                        <option selected disabled>Select an insurance provider</option>
+                        <option>PolicyBazaar</option>
+                        <option>Star Health</option>
+                        <option>ICICI Lombard</option>
+                        <option>Bajaj Allianz</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Policy Number <i class="bi bi-info-circle" data-bs-toggle="tooltip"
+                            title="Enter exactly 12 digits."></i></label>
+                    <input type="text" id="policyNumber" class="form-control" placeholder="Enter 12 digit policy no."
+                        maxlength="12">
+                    <small class="d-none" id="policyError">Policy number must be exactly 12 digits.</small>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Payment Details</label>
+                    <div class="d-flex gap-4">
+                        <label><input type="radio" name="payment" value="Cash"> <i class="bi bi-cash"></i> Cash at
+                            Counter</label>
+                        <label><input type="radio" name="payment" value="MasterCard"> <i class="bi bi-credit-card"></i>
+                            MasterCard</label>
+                        <label><input type="radio" name="payment" value="UPI"> <i class="bi bi-qr-code"></i> UPI/QR
+                            Code</label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end">
+                <button class="btn btn-primary btn-lg px-4" id="confirmBtn" type="submit">Confirm Appointment</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>

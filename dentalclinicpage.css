@@ -1,0 +1,273 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #0d6efd 60%, #0dcaf0 100%);
+    box-shadow: 0 2px 8px rgba(137, 88, 88, 0.05);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-section {
+    background: url('clinic_image.png') no-repeat right center/cover, linear-gradient(90deg, #e3f2fd 60%, #f8fafc 100%);
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 24px rgba(1, 103, 255, 0.07);
+}
+
+.hero-content {
+    padding: 3rem 2rem;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    background: linear-gradient(45deg, #FFD700 0%, #FFB300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content ul {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #21c4c1;
+}
+
+
+.hero-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+
+    background: linear-gradient(45deg, #cac2c2 0%, #fffefd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.hero-btns .btn {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    background-color: rgb(7, 148, 187);
+}
+
+.specialities {
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.specialities-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.speciality-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 290px;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.speciality-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(13, 110, 253, 0.13);
+}
+
+.speciality-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0d6efd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speciality-card:hover .speciality-icon {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+}
+
+.speciality-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.speciality-card {
+    transition: all 0.3s ease;
+}
+
+.speciality-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0d6efd;
+    background: #f8fafc;
+}
+
+.speciality-card h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.speciality-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.about-us-section {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.about-us-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.testimonials-section {
+    background: linear-gradient(90deg, #e3f2fd 60%, #f8fafc 100%);
+    border-radius: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    min-height: 220px;
+    transition: box-shadow 0.2s;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 6px 24px rgba(13, 110, 253, 0.13);
+}
+
+.testimonial-stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.footer {
+    background: #0d6efd;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin-top: 3rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        flex-direction: column;
+        min-height: 520px;
+        background-position: center bottom;
+    }
+
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .specialities-inner {
+        gap: 1.5rem;
+        padding: 0 12px;
+    }
+
+    .speciality-card {
+        min-width: 220px;
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .specialities-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 4px;
+    }
+
+    .speciality-card {
+        min-width: 0;
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.2s, background 0.2s;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+    background: #0dcaf0 !important;
+    text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #e3f2fd;
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+@media (min-width: 1400px) {
+    .specialities .row {
+        max-width: 1100px;
+    }
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. YAM's Clinic – Excellence in Dental Care</title>
+    <meta name="description"
+        content="Dr. YAM's Clinic: World-class dental care, advanced treatments, and a compassionate team. Book your appointment today!">
+    <link rel="icon" href="dental_company_logo.jpg" type="image/jpeg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="dentalclinicpage.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="dental_company_logo.jpg" alt="Dr. YAM's Clinic Logo" class="me-2" width="48" height="48"
+                    style="border-radius:50%;border:2px solid #fff;">
+                Dr. YAM's Clinic
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mainNavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+
+                    <!-- Our Branches -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-geo-alt-fill me-1"></i> Our Branches
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end p-4" style="min-width: 370px;">
+                            <div class="row g-2">
+                                <div class="col-12 col-md-6">
+                                    <div class="branch-card p-3 rounded-3 mb-2 bg-light">
+                                        <div class="fw-bold">Jubilee Hills</div>
+                                        <div class="small text-muted">Hyderabad</div>
+                                        <div class="small"><i class="bi bi-telephone"></i> +91 9888505602</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="branch-card p-3 rounded-3 mb-2 bg-light">
+                                        <div class="fw-bold">Kondapur</div>
+                                        <div class="small text-muted">Hyderabad</div>
+                                        <div class="small"><i class="bi bi-telephone"></i> +91 8866221142</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="branch-card p-3 rounded-3 mb-2 bg-light">
+                                        <div class="fw-bold">Secunderabad</div>
+                                        <div class="small text-muted">Hyderabad</div>
+                                        <div class="small"><i class="bi bi-telephone"></i> +91 9784561230</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="branch-card p-3 rounded-3 mb-2 bg-light">
+                                        <div class="fw-bold">Mumbai</div>
+                                        <div class="small text-muted">Maharashtra</div>
+                                        <div class="small"><i class="bi bi-telephone"></i> +91 9987546132</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="branch-card p-3 rounded-3 mb-2 bg-light">
+                                        <div class="fw-bold">Pune</div>
+                                        <div class="small text-muted">Maharashtra</div>
+                                        <div class="small"><i class="bi bi-telephone"></i> +91 9755124569</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="branch-card p-3 rounded-3 mb-2 bg-light">
+                                        <div class="fw-bold">Kohlapur</div>
+                                        <div class="small text-muted">Maharashtra</div>
+                                        <div class="small"><i class="bi bi-telephone"></i> +91 8899665544</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="text-center mt-2">
+                                <a href="#contact" class="btn btn-outline-primary btn-sm">Contact All Branches</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- Quick Links -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-lightning-fill me-1"></i> Quick Links
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end p-3" style="min-width: 260px;">
+                            <h6 class="dropdown-header text-primary">Quick Access</h6>
+                            <a href="#why" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-patch-check-fill text-success me-2"></i> Why Here?
+                            </a>
+                            <a href="#faqs" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-question-circle-fill text-info me-2"></i> FAQs
+                            </a>
+                            <a href="#awards" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-trophy-fill text-warning me-2"></i> Awards
+                            </a>
+                            <a href="#tourism" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-airplane-fill text-danger me-2"></i> Dental Tourism
+                            </a>
+                            <a href="#testimonials" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-chat-dots-fill text-primary me-2"></i> Testimonials
+                            </a>
+                            <a href="#gallery" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-images text-secondary me-2"></i> Photo Gallery
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero named Navbar -->
+    <section class="hero-section container shadow-lg">
+        <div class="hero-content">
+            <h4 class="text-uppercase text-muted mb-2">Welcome to</h4>
+            <h1>Dr. YAM's Clinic</h1>
+            <p>Your trusted dental care partner, ensuring bright smiles with expert care.</p>
+            <ul class="list-unstyled mb-3 hero-color">
+                <li><span class="fw-bold">🏨 Address:</span> Sant Tukaram Nagar, Pune</li>
+                <li><span class="fw-bold">📞 Phone:</span> 98878****7</li>
+                <li><span class="fw-bold">⏰ Hours:</span> 10:00am – 5:00pm</li>
+            </ul>
+            <div class="hero-btns">
+                <a href="bookappo.html" target="_blank" class="btn btn-primary btn-lg shadow">Book Appointment</a>
+                <a href="reqacall.html" target="_blank" class="btn btn-lg shadow">Ask for a Callback</a>
+            </div>
+        </div>
+        <div class="d-none d-lg-block flex-grow-1"></div>
+    </section>
+
+    <!-- Specialities wala section-->
+    <section class="specialities my-5" id="services">
+        <h4 class="text-center text-uppercase text-muted mb-4"><u>Our Specialities</u></h4>
+        <div class="d-flex flex-wrap justify-content-center gap-4" style="max-width: 100%; margin: 0 auto;">
+            <div class="speciality-card text-center p-4 shadow rounded-4 bg-white"
+                style="flex: 1 1 220px; max-width: 280px;">
+                <img src="12.jpg" alt="Dental Care" class="mb-3 speciality-icon">
+                <h6 class="mt-2 fw-bold text-primary">Dental Care</h6>
+                <p class="small text-muted">Comprehensive dental checkups and treatments for all ages.</p>
+            </div>
+            <div class="speciality-card text-center p-4 shadow rounded-4 bg-white"
+                style="flex: 1 1 220px; max-width: 280px;">
+                <img src="14.jpg" alt="Oral Hygiene" class="mb-3 speciality-icon">
+                <h6 class="mt-2 fw-bold text-primary">Oral Hygiene</h6>
+                <p class="small text-muted">Professional cleaning and preventive oral care for a healthy smile.</p>
+            </div>
+            <div class="speciality-card text-center p-4 shadow rounded-4 bg-white"
+                style="flex: 1 1 220px; max-width: 280px;">
+                <img src="13.jpg" alt="Orthodontic Treatment" class="mb-3 speciality-icon">
+                <h6 class="mt-2 fw-bold text-primary">Orthodontic Treatment</h6>
+                <p class="small text-muted">Braces and aligners for perfectly aligned teeth and confident smiles.</p>
+            </div>
+            <div class="speciality-card text-center p-4 shadow rounded-4 bg-white"
+                style="flex: 1 1 220px; max-width: 280px;">
+                <img src="15.jpg" alt="Dental Prosthetics" class="mb-3 speciality-icon">
+                <h6 class="mt-2 fw-bold text-primary">Dental Prosthetics</h6>
+                <p class="small text-muted">Crowns, bridges, and dentures for restoring function and aesthetics.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- About Us wala section-->
+    <section class="about-us-section container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h4 class="text-uppercase text-muted">About Us</h4>
+                <h2 class="fw-bold mb-3">Excellence in <span class="text-primary">Dental Care</span></h2>
+                <p class="lead text-dark">
+                    <b>We are dedicated to providing top-notch dental care with a compassionate touch.
+                        Our expert team ensures a comfortable experience with the latest advancements in
+                        dentistry.</b>
+                </p>
+                <ul class="list-unstyled mb-3">
+                    <li>✔ Personalized treatment plans</li>
+                    <li>✔ State-of-the-art technology</li>
+                    <li>✔ A warm and welcoming environment</li>
+                </ul>
+                <a class="btn btn-warning text-white btn-lg shadow">Explore Our Services</a>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="about_us_image.jpg" class="img-fluid rounded-4 shadow-lg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews wala section -->
+    <section class="testimonials-section container">
+        <h4 class="text-center text-uppercase text-muted mb-4">What Our Patients Say</h4>
+        <div class="row g-4">
+            <div class="col-md-3 col-12">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I had an amazing experience at this clinic! The dentist was very professional. The procedure was
+                        painless, and they made sure I was comfortable throughout. Highly recommended!"</p>
+                    <div class="fw-bold text-end">– Raju Daruwala</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐</div>
+                    <p>"The clinic is spotless, and the service is outstanding. The dentist explained everything in
+                        detail, and the entire process was smooth. I will definitely be coming back for regular
+                        check-ups!"</p>
+                    <div class="fw-bold text-end">– Babli Sharma</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I was really nervous about getting my wisdom tooth removed, but the dentist and staff were so
+                        reassuring. The procedure was quick and pain-free! I'm so glad I chose this clinic."</p>
+                    <div class="fw-bold text-end">– Shyamu Chakki Wala</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐</div>
+                    <p>"My whole family visits this clinic, and we love it! The staff is patient with kids, and the
+                        quality of care is excellent. The only issue is the wait time, but overall, a great place for
+                        dental care!"</p>
+                    <div class="fw-bold text-end">– Haria Sabzi Wala</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="mb-2">
+                <strong>Dr. YAM's Clinic</strong> &copy; 2025 | All Rights Reserved
+            </div>
+            <div>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+            <div class="mt-2">
+                <small>Designed with ❤️ for your smile</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
